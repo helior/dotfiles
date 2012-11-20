@@ -75,3 +75,10 @@ end
 
 
 task :default => 'install'
+
+
+private
+def run(cmd)
+  puts "[Running] #{cmd}"
+  `#{cmd}` unless ENV['DEBUG']
+end
