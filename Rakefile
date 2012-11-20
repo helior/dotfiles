@@ -1,7 +1,7 @@
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
-task :install => [:submodule_init, :submodules] do
+task :install => [:submodule_init, :submodules, :install_homebrew] do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -35,9 +35,7 @@ task :install => [:submodule_init, :submodules] do
 end
 
 task :uninstall do
-
   Dir.glob('**/*.symlink').each do |linkable|
-
     file = linkable.split('/').last.split('.symlink').last
     target = "#{ENV["HOME"]}/.#{file}"
 
@@ -73,6 +71,9 @@ task :submodules do
   end
 end
 
+task :install_homebrew do
+  install_homebrew if RUBY_PLATFORM.downcase.include?("darwin")
+end
 
 task :default => 'install'
 
@@ -81,4 +82,20 @@ private
 def run(cmd)
   puts "[Running] #{cmd}"
   `#{cmd}` unless ENV['DEBUG']
+end
+
+def install_homebrew
+  puts "======================================================"
+  puts "Installing Homebrew, the OSX package manager...If it's"
+  puts "already installed, this will do nothing."
+  puts "======================================================"
+  run %{ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"}
+  puts
+  puts
+  puts "======================================================"
+  puts "Installing Homebrew packages...There may be some warnings."
+  puts "======================================================"
+  run %{brew install ack git hub}
+  puts
+  puts
 end
