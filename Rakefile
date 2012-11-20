@@ -1,7 +1,7 @@
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
-task :install do
+task :install => [:submodule_init, :submodules] do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -53,5 +53,25 @@ task :uninstall do
 
   end
 end
+
+
+task :submodule_init do
+  unless ENV["SKIP_SUBMODULES"]
+    run %{ git submodule update --init --recursive }
+  end
+end
+
+
+desc "Init and update submodules."
+task :submodules do
+  unless ENV["SKIP_SUBMODULES"]
+    run %{
+      cd $HOME/.dotfiles
+      git submodule foreach 'git fetch origin; git checkout master; git reset --hard origin/master; git submodule update --recursive; git clean -dfx'
+      git clean -dfx
+    }
+  end
+end
+
 
 task :default => 'install'
