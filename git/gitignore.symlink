@@ -15,6 +15,12 @@ Thumbs.db
 # Folder config file
 Desktop.ini
 
+# Windows links.
+*.lnk
+
+# Temporary files.
+tmp*
+
 # Vim taken from: https://github.com/github/gitignore/blob/master/Global/vim.gitignore
 # ----------------------------------------------------------------------------------------------
 .*.sw[a-z]
@@ -24,3 +30,10 @@ Session.vim
 # SASS
 # ----------------------------------------------------------------------------------------------
 .sass-cache
+
+# Patch/diff artifacts.
+*.patch
+*.diff
+*.orig
+*.rej
+interdiff*.txt
