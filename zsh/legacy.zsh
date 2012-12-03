@@ -14,9 +14,9 @@ RPROMPT='%{$fg[white]%} $(~/bin/git-cwd-info)%{$reset_color%}'
 
 # Show completion on first TAB
 setopt menucomplete
-
+# 327
 umask 002
-export _GEM_EXECUTABLE_PATH=/usr/local/Cellar/ruby/1.9.3-p194/bin
+export _GEM_EXECUTABLE_PATH=/usr/local/Cellar/ruby/1.9.3-p194/bin:/usr/local/Cellar/ruby/1.9.3-p327/bin
 export PATH=~/bin:/usr/local/bin:${_GEM_EXECUTABLE_PATH}:/Applications/MAMP/Library/bin:${PATH}
 export DRUSH_PHP=/Applications/MAMP/bin/php/php5.3.6/bin/php
 
