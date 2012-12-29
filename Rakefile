@@ -95,7 +95,7 @@ def install_homebrew
   puts "======================================================"
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
-  run %{brew install ack git hub drush grc}
+  run %{brew install coreutils ack git hub drush grc}
   puts
   puts
 end

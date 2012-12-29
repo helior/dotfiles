@@ -22,7 +22,6 @@ export DRUSH_PHP=/Applications/MAMP/bin/php/php5.3.6/bin/php
 
 export EDITOR="$HOME/bin/subl -w"
 export GIT_EDITOR="subl -w"
-alias ls='ls -lahF'
 alias vhosts='mate /etc/hosts /ApplicATIONS/MAMP/Library/vhosts'
 alias mysql='mysql -u root -proot'
 alias www='cd ~/Sites/testing/drupal-7/sites;ls'
