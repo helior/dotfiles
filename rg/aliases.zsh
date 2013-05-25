@@ -1,2 +1,2 @@
-alias silol='drush site-install wpp_lol_com_profile --account-pass=admin --yes'
-alias silmao='drush site-install lmao --account-pass=admin --yes'
+alias silol='drush site-install lol2_profile --account-pass=admin --yes'
+alias u='git pull upstream 7.x-1.x'
