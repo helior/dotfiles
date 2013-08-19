@@ -1,2 +1,4 @@
 #add each topic folder to fpath so that they can add functions and completion scripts
-# for topic_folder ($ZSH/*) if [ -d $topic_folder ]; then fpath=($topic_folder $fpath); fi;
+# for topic_functions in `find $ZSH/*/functions -type d -not -empty`; do
+#   fpath=($topic_functions $fpath)
+# done

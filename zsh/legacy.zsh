@@ -16,9 +16,7 @@ RPROMPT='%{$fg[white]%} $(~/bin/git-cwd-info)%{$reset_color%}'
 setopt menucomplete
 # 327
 umask 002
-export _GEM_EXECUTABLE_PATH=/usr/local/Cellar/ruby/2.0.0-p195/bin
-export PATH=~/bin:/usr/local/bin:${_GEM_EXECUTABLE_PATH}:/Applications/MAMP/Library/bin:${PATH}
-export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.10/bin/php
+export PATH=~/bin:/usr/local/bin:/Applications/MAMP/Library/bin:${PATH}
 
 export EDITOR="$HOME/bin/subl -w"
 export GIT_EDITOR="subl -w"
