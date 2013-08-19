@@ -16,12 +16,14 @@ RPROMPT='%{$fg[white]%} $(~/bin/git-cwd-info)%{$reset_color%}'
 setopt menucomplete
 # 327
 umask 002
-export PATH=~/bin:/usr/local/bin:/Applications/MAMP/Library/bin:${PATH}
+export PATH=~/bin:/Applications/MAMP/Library/bin:${PATH}
 
 export EDITOR="$HOME/bin/subl -w"
-export GIT_EDITOR="subl -w"
+export GIT_EDITOR="vi"
+
 alias vhosts='mate /etc/hosts /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf'
 alias mysql='mysql -u root -proot'
+
 alias www='cd ~/Sites/testing/drupal-7/sites;ls'
 alias contrib='cd ~/Dropbox/Code/Drupal/contrib'
-alias riot='cd ~/Dropbox/Code/Drupal/riot;ls'
+
