@@ -3,6 +3,8 @@ autoload -U colors
 colors
 setopt prompt_subst
 
+PATH=${HOME}/bin:${PATH}
+
 # Prompt
 local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☠%{$reset_color%})"
 
