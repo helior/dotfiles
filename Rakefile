@@ -1,7 +1,7 @@
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
-task :install => [:submodule_init, :submodules, :install_homebrew] do
+task :install do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -53,49 +53,4 @@ task :uninstall do
 end
 
 
-task :submodule_init do
-  unless ENV["SKIP_SUBMODULES"]
-    run %{ git submodule update --init --recursive }
-  end
-end
-
-
-desc "Init and update submodules."
-task :submodules do
-  unless ENV["SKIP_SUBMODULES"]
-    run %{
-      cd $HOME/.dotfiles
-      git submodule foreach 'git fetch origin; git checkout master; git reset --hard origin/master; git submodule update --recursive; git clean -dfx'
-      git clean -dfx
-    }
-  end
-end
-
-task :install_homebrew do
-  install_homebrew if RUBY_PLATFORM.downcase.include?("darwin")
-end
-
 task :default => 'install'
-
-
-private
-def run(cmd)
-  puts "[Running] #{cmd}"
-  `#{cmd}` unless ENV['DEBUG']
-end
-
-def install_homebrew
-  puts "======================================================"
-  puts "Installing Homebrew, the OSX package manager...If it's"
-  puts "already installed, this will do nothing."
-  puts "======================================================"
-  run %{ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"}
-  puts
-  puts
-  puts "======================================================"
-  puts "Installing Homebrew packages...There may be some warnings."
-  puts "======================================================"
-  run %{brew install coreutils ack git hub drush grc}
-  puts
-  puts
-end
