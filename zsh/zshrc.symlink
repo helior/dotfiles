@@ -30,8 +30,22 @@ do
   source $file
 done
 
-# initialize autocomplete here, otherwise functions won't be loaded
+unset config_files
+
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=2000
+SAVEHIST=2000
+setopt appendhistory
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/helior/.zshrc'
+
 autoload -Uz compinit
 compinit
+# End of lines added by compinstall
 
-unset config_files
