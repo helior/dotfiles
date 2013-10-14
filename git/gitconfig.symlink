@@ -75,7 +75,7 @@
 
 [alias]
   co = checkout
-  ad = !git add . && git add -u
+  ad = add -A
   df = diff --cached
   st = !clear && git status
   br = branch -a
