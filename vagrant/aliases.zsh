@@ -1,1 +1,1 @@
-alias v="vagrant"
+alias v="/usr/bin/vagrant"
