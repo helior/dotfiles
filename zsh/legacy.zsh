@@ -8,7 +8,8 @@ PATH=${HOME}/bin:${PATH}
 # Prompt
 local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☠%{$reset_color%})"
 
-PROMPT='%~ ${smiley} %{$reset_color%}'
+PROMPT='%~
+${smiley} %{$reset_color%}'
 
 # Show completion on first TAB
 setopt menucomplete
