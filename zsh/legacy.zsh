@@ -3,8 +3,6 @@ autoload -U colors
 colors
 setopt prompt_subst
 
-PATH=${HOME}/bin:${PATH}
-
 # Homebrew told me to add this to access online help, so...
 unalias run-help
 autoload run-help
@@ -25,5 +23,3 @@ export EDITOR="$HOME/bin/subl -w"
 
 alias vhosts='subl /etc/hosts /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf'
 alias mysql='mysql -u root -proot'
-
-
