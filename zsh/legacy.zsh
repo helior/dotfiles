@@ -23,3 +23,4 @@ export EDITOR="$HOME/bin/subl -w"
 
 alias vhosts='subl /etc/hosts /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf'
 alias mysql='mysql -u root -proot'
+alias mysqldump='mysqldump -u root -proot'
