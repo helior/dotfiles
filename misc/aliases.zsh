@@ -1,6 +1,5 @@
 # Copy working directory to pasteboard
 alias cwd='pwd|pbcopy'
-alias composer='composer.phar'
 
 # Rename the terminal tab
 function tabname {
