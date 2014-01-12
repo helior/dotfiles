@@ -44,7 +44,7 @@ bindkey -v
 
 
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/helior/.zshrc'
+zstyle :compinstall filename $HOME/.zshrc
 
 autoload -Uz compinit
 compinit

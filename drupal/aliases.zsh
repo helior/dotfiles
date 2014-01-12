@@ -13,7 +13,7 @@ alias dm='drush make --no-core --contrib-destination=. --yes'
 alias drush-debug=_drush_debug
 
 function _drush_debug() {
-  export XDEBUG_CONFIG="idekey=helior.colorado";
+  export XDEBUG_CONFIG="idekey=helior";
   drush $*
   unset XDEBUG_CONFIG
 }
