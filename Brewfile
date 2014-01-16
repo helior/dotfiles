@@ -23,6 +23,36 @@ install drush
 install rbenv
 install ruby-build
 
+# Applications
+tap phinze/homebrew-cask
+install brew-cask
+
+# cask install alfred
+cask install all2mp3
+cask install caffeine
+cask install colloquy
+cask install dropbox
+cask install evernote
+cask install google-chrome
+cask install google-hangouts
+# cask install kaleidoscope
+caks install lastfm
+cask install nvalt
+# cask install omnifocus
+# cask install phpstorm
+cask install qlcolorcode
+cask install qlmarkdown
+cask install qlprettypatch
+cask install qlstephen
+cask install quicklook-csv
+cask install quicklook-json
+cask install sequal-pro
+cask install silverlight
+cask install sublime-text
+cask install transmission
+cask install vagrant
+cask install virtualbox
+
 
 # Remove outdated versions from the cellar
 cleanup
