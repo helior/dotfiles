@@ -83,6 +83,9 @@
   com = commit -v
   am = commit --amend
 
+  # Create an on-the-fly snapshot
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+
   # Log display from screencast, with train tracks.
   log = log --decorate --graph --date=short
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
