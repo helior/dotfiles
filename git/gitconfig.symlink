@@ -1,6 +1,23 @@
 [advice]
   statusHints = false
 
+[alias]
+  a = apply --index
+  ad = add -A
+  am = commit --amend
+  br = branch -a
+  co = checkout
+  com = commit -v
+  df = diff --cached
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  # Log display from screencast, with train tracks.
+  log = log --decorate --graph --date=short
+  # Alternate log display from Scott Chacon
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  # Create an on-the-fly snapshot
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+  st = !clear && git status
+
 [apply]
   whitespace = warn
 
@@ -46,6 +63,12 @@
 	tool = Kaleidoscope
   algorithm = patience
 
+[difftool]
+  prompt = false
+
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 
@@ -54,13 +77,20 @@
   autocorrect = 1
 
 [hub]
-  host = gh.riotgames.com
-  protocol = https
+  # host = gh.riotgames.com
+  # protocol = https
 
 [merge]
   summary = true
   verbosity = 1
 	tool = Kaleidoscope
+
+[mergetool]
+  prompt = false
+
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
 
 [push]
   # 'git push' will push the current branch to its tracking branch
@@ -73,30 +103,3 @@
 [user]
   name = Helior Colorado
   email = me@helior.info
-
-[alias]
-  co = checkout
-  ad = add -A
-  df = diff --cached
-  st = !clear && git status
-  br = branch -a
-  com = commit -v
-  am = commit --amend
-
-  # Create an on-the-fly snapshot
-  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
-
-  # Log display from screencast, with train tracks.
-  log = log --decorate --graph --date=short
-  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
-  # Alternate log display from Scott Chacon
-  lol = log --pretty=oneline --abbrev-commit --graph --decorate
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	prompt = false
