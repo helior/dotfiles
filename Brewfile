@@ -36,7 +36,7 @@ cask install evernote
 cask install google-chrome
 cask install google-hangouts
 # cask install kaleidoscope
-caks install lastfm
+cask install lastfm
 cask install nvalt
 # cask install omnifocus
 # cask install phpstorm
