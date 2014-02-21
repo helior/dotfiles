@@ -1,0 +1,2 @@
+drupal/drush.symlink
+!drupal/drush.symlink/drushrc.php
