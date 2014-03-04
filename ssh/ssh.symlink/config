@@ -1,0 +1,36 @@
+##### NBCUniversal #####
+
+## NBC.com
+Host nbc.prod
+Hostname web-6326.prod.hosting.acquia.com
+User nbcunbc
+
+Host nbc.stage
+Hostname web-6281.prod.hosting.acquia.com
+User nbcunbc
+
+Host nbc.acc
+Hostname web-6285.prod.hosting.acquia.com
+User nbcunbc
+
+Host nbc.dev
+Hostname web-6879.prod.hosting.acquia.com
+User nbcunbc
+
+
+## Tonight Show w/ Jimmy Falon
+Host tsjf.prod
+Hostname web-7236.prod.hosting.acquia.com
+User nbcutsjf
+
+Host tsjf.stage
+Hostname web-7260.prod.hosting.acquia.com
+User nbcutsjf
+
+Host tsjf.acc
+Hostname web-7255.prod.hosting.acquia.com
+User nbcutsjf
+
+Host tsjf.dev
+Hostname web-7250.prod.hosting.acquia.com
+User nbcutsjf
