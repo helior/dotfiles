@@ -6,3 +6,5 @@ then
   alias ls="gls -lAh --color"
   alias l="gls -FA --color"
 fi
+
+alias phpserver='php -S localhost:8000'

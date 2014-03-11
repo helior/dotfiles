@@ -34,3 +34,7 @@ User nbcutsjf
 Host tsjf.dev
 Hostname web-7250.prod.hosting.acquia.com
 User nbcutsjf
+
+Host nbc.sandbox
+Hostname 54.242.166.250
+User ec2-user
