@@ -13,7 +13,7 @@
   # Log display from screencast, with train tracks.
   log = log --decorate --graph --date=short
   # Alternate log display from Scott Chacon
-  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  ll = log --pretty=oneline --abbrev-commit --graph --decorate
   # Set fetching pull-requests from upstream remotes easy-peasy https://gist.github.com/piscisaureus/3342247
   pr-upstream = !git config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/pr/*' && git fetch upstream
   # Create an on-the-fly snapshot
@@ -66,10 +66,13 @@
   algorithm = patience
 
 [difftool]
-  prompt = false
+  prompt = true
 
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool "opendiff"]
+  cmd = /usr/bin/opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\" | cat
 
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
