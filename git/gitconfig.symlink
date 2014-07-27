@@ -111,4 +111,4 @@
 # delete all branches that have already been merged.
 # git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
 [http]
-	proxy = http://proxyanbcge.nbc.com:80
+	#proxy = http://proxyanbcge.nbc.com:80

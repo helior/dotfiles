@@ -23,6 +23,10 @@ install drush
 install rbenv
 install ruby-build
 
+# Devops Tooling
+tap homebrew/binary
+install packer
+
 # Applications
 tap phinze/homebrew-cask
 install brew-cask
