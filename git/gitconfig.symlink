@@ -115,3 +115,5 @@
 # git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
 [rerere]
 	enabled = true
+[http]
+	#proxy = http://proxyanbcge.nbc.com:80
