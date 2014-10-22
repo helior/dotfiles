@@ -50,3 +50,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+
+[ -s "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh" ] && source "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh"
+
+export BEHAT_PARAMS='{"mink": {"sessions": {"name": {"browser_stack": {"username": "heliorcolorado1", "access_key": "YhrWqQcCvpeJc1sqXgCr"}}}}}'
+
+# added by travis gem
+[ -f /Users/heliorcolorado/.travis/travis.sh ] && source /Users/heliorcolorado/.travis/travis.sh

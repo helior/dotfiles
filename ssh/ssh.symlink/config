@@ -14,7 +14,9 @@ Hostname web-6285.prod.hosting.acquia.com
 User nbcunbc
 
 Host nbc.dev
-Hostname web-6879.prod.hosting.acquia.com
+Hostname web-6877.prod.hosting.acquia.com
+#Hostname web-6878.prod.hosting.acquia.com
+#Hostname web-6879.prod.hosting.acquia.com
 User nbcunbc
 
 
@@ -31,8 +33,16 @@ Host tsjf.acc
 Hostname web-7255.prod.hosting.acquia.com
 User nbcutsjf
 
+Host tsjf.acc-edit
+Hostname web-7256.prod.hosting.acquia.com
+User nbcutsjf
+
 Host tsjf.dev
 Hostname web-7250.prod.hosting.acquia.com
+User nbcutsjf
+
+Host tsjf.dev-edit
+Hostname web-7251.prod.hosting.acquia.com
 User nbcutsjf
 
 Host nbc.sandbox

@@ -113,3 +113,5 @@
 # TODO:
 # delete all branches that have already been merged.
 # git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+[rerere]
+	enabled = true
