@@ -55,7 +55,7 @@ cask install quicklook-json
 # cask install silverlight
 # cask install sublime-text
 # cask install transmission
-# cask install vagrant
+cask install vagrant
 # cask install virtualbox
 
 

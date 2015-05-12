@@ -13,3 +13,6 @@ function winname {
 
 # TODO: find a place for this. Get Akamai headers
 alias akcurlheaders='curl -H "Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no, akamai-x-get-request-id" -v -o /dev/null'
+
+# Lazy editor shortcut
+alias s="subl ."

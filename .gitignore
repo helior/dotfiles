@@ -3,3 +3,6 @@ drupal/drush.symlink/*
 
 ssh/ssh.symlink/*
 !ssh/ssh.symlink/config
+
+chef/chef.symlink/cache
+chef/chef.symlink/syntaxcache

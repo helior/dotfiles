@@ -38,7 +38,7 @@ Hostname web-7256.prod.hosting.acquia.com
 User nbcutsjf
 
 Host tsjf.dev
-Hostname web-7250.prod.hosting.acquia.com
+Hostname web-12211.prod.hosting.acquia.com
 User nbcutsjf
 
 Host tsjf.dev-edit
@@ -48,3 +48,21 @@ User nbcutsjf
 Host nbc.sandbox
 Hostname 54.242.166.250
 User ec2-user
+
+
+##### Heretic #####
+Host heretic.dev
+Hostname nodejs-app-dev-heretic.lookitsuni.com
+User helior
+
+Host heretic.acc
+Hostname nodejs-app-acc-heretic.lookitsuni.com
+User helior
+
+Host heretic.stage
+Hostname nodejs-app-stage-heretic.lookitsuni.com
+User helior
+
+Host heretic.prod
+Hostname nodejs-app-prod-heretic.lookitsuni.com
+User helior

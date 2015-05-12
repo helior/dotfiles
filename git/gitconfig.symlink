@@ -100,14 +100,14 @@
 [push]
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
-  default = tracking
+	default = tracking
 
 [status]
   submodule = 1
 
 [user]
-  name = Helior Colorado
-  email = me@helior.info
+	name = Helior Colorado
+	email = me@helior.info
 
 
 # TODO:
