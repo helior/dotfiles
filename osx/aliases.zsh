@@ -14,4 +14,4 @@ alias ethon="sudo ifconfig en4 up"
 
 # TODO: refactor the network device name to detect an ethernet port.
 
-alias nods="find . -name '.DS_Store' -exec rm {} \;"
+alias nods="find . -name '.DS_Store' -exec rm -v {} \;"
