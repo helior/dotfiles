@@ -6,4 +6,4 @@ if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
 fi
 
 # Editor
-export GIT_EDITOR="subl -w"
+export GIT_EDITOR="atom -nw"

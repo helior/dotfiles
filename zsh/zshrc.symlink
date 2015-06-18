@@ -1,6 +1,6 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
-export PATH=${HOME}/bin:/usr/local/bin:${PATH}:/sbin:/usr/sbin:/usr/libexec
+export PATH=${HOME}/bin:/usr/local/bin:${PATH}:/sbin:/usr/sbin:/usr/libexec:${HOME}/.composer/vendor/bin
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
@@ -52,8 +52,6 @@ compinit
 
 
 [ -s "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh" ] && source "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh"
-
-export BEHAT_PARAMS='{"mink": {"sessions": {"name": {"browser_stack": {"username": "heliorcolorado1", "access_key": "YhrWqQcCvpeJc1sqXgCr"}}}}}'
 
 # added by travis gem
 [ -f /Users/heliorcolorado/.travis/travis.sh ] && source /Users/heliorcolorado/.travis/travis.sh

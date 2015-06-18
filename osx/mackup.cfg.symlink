@@ -1,4 +1,5 @@
 [applications_to_sync]
+atom
 nvalt
 omnifocus
 phpstorm-7
