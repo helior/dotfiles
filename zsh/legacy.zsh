@@ -19,7 +19,7 @@ setopt menucomplete
 # 327
 umask 002
 
-export EDITOR="$HOME/bin/subl -w"
+export EDITOR="/usr/local/bin/atom -nw"
 
 alias vhosts='subl /etc/hosts /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf'
 alias mysql='mysql -u root -proot'
