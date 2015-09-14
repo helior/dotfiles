@@ -23,6 +23,12 @@ rake install
 - **\*.zsh** files are automatically sourced. See *zsh/zshrc.symlink*.
 - **~/.localrc** is sourced automatically. Use this file for sensitive information that you DON'T want in the repository. See *zsh/zshrc.symlink*.
 
+### Other things I usually download:
+###### NPM
+- trash
+- tldr
+- gulp-cli
+- grunt-cli
 
 Thanks to...
 --------
