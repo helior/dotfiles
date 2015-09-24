@@ -27,6 +27,14 @@ rake install
 - There is a `Brewfile` in which you'll need to install using `brew bundle`. Many Cask entries are commented out because installing this way was awkward, but I just want to remind myself which apps I usually install.
 - Run `curl -Lo- https://bit.ly/janus-bootstrap | bash` to install Janus (Vim upgrades)
 
+### Other things I usually download:
+###### NPM
+- trash
+- tldr
+- gulp-cli
+- grunt-cli
+
+
 Thanks to...
 --------
 [Zach Holman](https://github.com/holman/dotfiles) and [Yan Pritzker](https://github.com/skwp/dotfiles) for sharing their methods for installing and updating their dotfiles and git submodules.
