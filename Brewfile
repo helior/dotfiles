@@ -40,7 +40,7 @@ install brew-cask
 # cask install google-chrome
 # cask install google-hangouts
 ## cask install kaleidoscope
-cask install ksdiff
+# cask install ksdiff
 # cask install lastfm
 # cask install nvalt
 ## cask install omnifocus

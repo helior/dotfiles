@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "grunt-cli": "^0.1.13",
+    "surge": "0.14.3",
     "tldr": "0.0.6",
-    "dustjs-linkedin": "^2.3.4",
-    "bower": "^1.3.3",
+    "trash": "^1.4.1",
     "yo": "^1.1.2"
   }
 }

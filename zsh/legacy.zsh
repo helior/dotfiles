@@ -19,8 +19,8 @@ setopt menucomplete
 # 327
 umask 002
 
-export EDITOR="/usr/local/bin/atom -nw"
+export EDITOR="vim"
 
-alias vhosts='subl /etc/hosts /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf'
+alias vhosts='atom -n /etc/hosts /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf'
 alias mysql='mysql -u root -proot'
 alias mysqldump='mysqldump -u root -proot'

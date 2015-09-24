@@ -9,16 +9,22 @@ Host nbc.stage
 Hostname web-6281.prod.hosting.acquia.com
 User nbcunbc
 
+Host nbc.video
+Hostname web-9701.prod.hosting.acquia.com
+User nbcunbc
+
 Host nbc.acc
 Hostname web-6285.prod.hosting.acquia.com
 User nbcunbc
 
 Host nbc.dev
-Hostname web-6877.prod.hosting.acquia.com
-#Hostname web-6878.prod.hosting.acquia.com
-#Hostname web-6879.prod.hosting.acquia.com
+#Hostname web-6877.prod.hosting.acquia.com #inactive
+Hostname web-6879.prod.hosting.acquia.com
 User nbcunbc
 
+Host nbc.devedit
+Hostname web-6878.prod.hosting.acquia.com
+User nbcunbc
 
 ## Tonight Show w/ Jimmy Falon
 Host tsjf.prod

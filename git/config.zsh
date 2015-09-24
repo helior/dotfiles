@@ -6,4 +6,4 @@ if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
 fi
 
 # Editor
-export GIT_EDITOR="atom -nw"
+export GIT_EDITOR="vim"
