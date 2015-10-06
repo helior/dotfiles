@@ -1,8 +1,16 @@
 [applications_to_sync]
 atom
+hazel
+netrc
 nvalt
 omnifocus
 phpstorm-7
 sequel-pro
+ssh
 sublime-text-3
 transmission
+
+[applications_to_ignore]
+chef
+git
+zsh
