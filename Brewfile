@@ -30,6 +30,7 @@ install packer
 # Applications
 tap phinze/homebrew-cask
 install brew-cask
+install mackup
 
 # cask install alfred
 # cask install all2mp3
