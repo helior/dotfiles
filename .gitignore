@@ -1,8 +1,5 @@
 drupal/drush.symlink/*
 !drupal/drush.symlink/drushrc.php
 
-ssh/ssh.symlink/*
-!ssh/ssh.symlink/config
-
 chef/chef.symlink/cache
 chef/chef.symlink/syntaxcache
