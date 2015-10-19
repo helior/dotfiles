@@ -1,7 +1,6 @@
 [applications_to_sync]
 atom
 hazel
-netrc
 nvalt
 omnifocus
 phpstorm-7
