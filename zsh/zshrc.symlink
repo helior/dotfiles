@@ -2,6 +2,14 @@
 export ZSH=$HOME/.dotfiles
 export PATH=${HOME}/bin:/usr/local/bin:${PATH}:/sbin:/usr/sbin:/usr/libexec:${HOME}/.composer/vendor/bin
 
+# The following lines were added by compinstall
+zstyle :compinstall filename $HOME/.zshrc
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 if [[ -a ~/.localrc ]]
@@ -43,12 +51,6 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 
-# The following lines were added by compinstall
-zstyle :compinstall filename $HOME/.zshrc
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
 
 
 [ -s "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh" ] && source "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh"
