@@ -1,1 +1,0 @@
-/Users/heliorcolorado/.chef/knife-vulpnea.rb

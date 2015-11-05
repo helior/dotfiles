@@ -4,3 +4,4 @@ drupal/drush.symlink/*
 chef/chef.symlink/cache
 chef/chef.symlink/syntaxcache
 chef/chef.symlink/*.pem
+chef/chef.symlink/knife.rb
