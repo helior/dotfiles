@@ -62,14 +62,11 @@
   # instead of a/b/c/d as prefixes for patches
   mnemonicprefix = true
   renames = copies
-	tool = Kaleidoscope
+	tool = opendiff
   algorithm = patience
 
 [difftool]
   prompt = true
-
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [difftool "opendiff"]
   cmd = /usr/bin/opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\" | cat
@@ -117,3 +114,7 @@
 	enabled = true
 [http]
 	#proxy = http://proxyanbcge.nbc.com:80
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
