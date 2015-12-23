@@ -5,3 +5,4 @@ chef/chef.symlink/cache
 chef/chef.symlink/syntaxcache
 chef/chef.symlink/*.pem
 chef/chef.symlink/knife.rb
+chef/chef.symlink/data
