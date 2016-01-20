@@ -16,6 +16,7 @@
   ll = log --pretty=oneline --abbrev-commit --graph --decorate
   # Set fetching pull-requests from upstream remotes easy-peasy https://gist.github.com/piscisaureus/3342247
   pr-upstream = !git config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/pr/*' && git fetch upstream
+  pr-origin = !git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*' && git fetch origin
   # Create an on-the-fly snapshot
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
   st = !clear && git status
