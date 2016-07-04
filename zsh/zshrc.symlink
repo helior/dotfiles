@@ -54,6 +54,3 @@ bindkey -v
 
 
 [ -s "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh" ] && source "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh"
-
-# added by travis gem
-[ -f /Users/heliorcolorado/.travis/travis.sh ] && source /Users/heliorcolorado/.travis/travis.sh
