@@ -1,5 +1,5 @@
 
-alias v="/usr/bin/vagrant"
+alias v="vagrant"
 
 # Executable for VirtualBox [start, stop, restart]
-alias vb="/Library/StartupItems/VirtualBox/VirtualBox"
+alias vb="/usr/local/bin/VirtualBox"
