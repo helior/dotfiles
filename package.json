@@ -10,6 +10,7 @@
     "babel": "^5.8.23",
     "grunt-cli": "^0.1.13",
     "gulp-cli": "^0.23.0",
+    "nodemon": "^1.8.1",
     "node-inspector": "^0.7.4",
     "serverless": "^0.5.5",
     "surge": "0.14.3",
