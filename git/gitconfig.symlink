@@ -7,7 +7,7 @@
   am = commit --amend
   br = branch -a
   co = checkout
-  com = commit -v -S
+  com = commit -v
   df = diff --cached
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   # Log display from screencast, with train tracks.
@@ -51,9 +51,6 @@
   added = green
   changed = yellow
   untracked = cyan
-
-[commit]
-	gpgsign = true
 
 [core]
   autocrlf = false

@@ -1,3 +1,6 @@
 alias k='knife'
 
-eval "$(chef shell-init zsh)"
+if which chef > /dev/null;
+  then
+    eval "$(chef shell-init zsh)"
+  fi

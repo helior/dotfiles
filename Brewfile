@@ -1,3 +1,4 @@
+cask_args appdir: '/Users/heliorcolorado/Applications'
 # Run `brew bundle` to install these.
 # Make sure we’re using the latest Homebrew
 update
@@ -14,6 +15,7 @@ install zsh
 # Version Control
 install git
 install hub
+install gpg
 
 # Web Development
 tap josegonzalez/homebrew-php
@@ -28,9 +30,8 @@ tap homebrew/binary
 install packer
 
 # Applications
-tap phinze/homebrew-cask
-install brew-cask
 install mackup
+tap caskroom/cask
 
 # cask install alfred
 # cask install all2mp3
