@@ -2,13 +2,30 @@
   statusHints = false
 
 [alias]
+  # Apply a patch without committing it
   a = apply --index
+  # Add all the things (including removal of files)
   ad = add -A
   am = commit --amend
   br = branch -a
   co = checkout
   com = commit -v
+  # List contributors with number of commits
+  contributors = shortlog --summary --numbered
+  # Credit an author on the latest commit
+	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
   df = diff --cached
+  # Remove branches that have already been merged with master; a.k.a. ‘delete merged’
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+  # Find branches containing commit
+	fb = "!f() { git branch -a --contains $1; }; f"
+	# Find tags containing commit
+	ft = "!f() { git describe --always --contains $1; }; f"
+	# Find commits by source code
+	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+	# Find commits by commit message
+	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
   l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   # Log display from screencast, with train tracks.
   log = log --decorate --graph --date=short
@@ -22,7 +39,7 @@
   st = !clear && git status
 
 [apply]
-  whitespace = warn
+  whitespace = fix
 
 [branch]
   autosetupmerge = true
