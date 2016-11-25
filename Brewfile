@@ -27,11 +27,14 @@ install ruby-build
 
 # Devops Tooling
 tap homebrew/binary
-install packer
+# install packer
 
 # Applications
 install mackup
 tap caskroom/cask
+
+# Fun stuff
+install youtube-dl
 
 # cask install alfred
 # cask install all2mp3
