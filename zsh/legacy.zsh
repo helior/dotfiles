@@ -4,7 +4,7 @@ colors
 setopt prompt_subst
 
 # Homebrew told me to add this to access online help, so...
-unalias run-help
+unalias run-help &>/dev/null
 autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
 

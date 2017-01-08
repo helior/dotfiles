@@ -1,6 +1,5 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
-export PATH=${HOME}/bin:/usr/local/bin:${PATH}:/sbin:/usr/sbin:/usr/libexec:${HOME}/.composer/vendor/bin
 
 # The following lines were added by compinstall
 zstyle :compinstall filename $HOME/.zshrc
@@ -53,7 +52,7 @@ bindkey -v
 
 
 
-[ -s "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh" ] && source "/Users/heliorcolorado/.scm_breeze/scm_breeze.sh"
+[ -s "/Users/helior/.scm_breeze/scm_breeze.sh" ] && source "/Users/helior/.scm_breeze/scm_breeze.sh"
 
-export NVM_DIR="/Users/heliorcolorado/.nvm"
+export NVM_DIR="/Users/helior/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
