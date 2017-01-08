@@ -16,8 +16,6 @@
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
   d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
   df = diff --cached
-  # Remove branches that have already been merged with master; a.k.a. ‘delete merged’
-	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   # Find branches containing commit
 	fb = "!f() { git branch -a --contains $1; }; f"
 	# Find tags containing commit
@@ -26,7 +24,7 @@
 	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
 	# Find commits by commit message
 	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
-  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   # Log display from screencast, with train tracks.
   log = log --decorate --graph --date=short
   # Alternate log display from Scott Chacon
@@ -37,6 +35,19 @@
   # Create an on-the-fly snapshot
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
   st = !clear && git status
+
+  # Add a remote; $1: remote name; $2: github path
+  ra = "!f() { git remote add $1 https://github.com/$2.git; }; f"
+
+  # Remove branches that have already been merged with master; a.k.a. ‘delete merged’
+	prune = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+  # Prune all stale remote branches
+  prune-all = !git remote | xargs -n 1 git remote prune
+
+  # See what's new
+  new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+
 
 [apply]
   whitespace = fix
@@ -124,10 +135,6 @@
 	name = Helior Colorado
 	email = me@helior.info
 
-
-# TODO:
-# delete all branches that have already been merged.
-# git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
 [rerere]
 	enabled = true
 [http]
