@@ -24,6 +24,7 @@ install composer
 install drush
 install rbenv
 install ruby-build
+install yarn
 
 # Devops Tooling
 tap homebrew/binary
