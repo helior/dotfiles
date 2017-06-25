@@ -63,7 +63,7 @@ cask install quicklook-json
 # cask install transmission
 cask install vagrant
 # cask install virtualbox
-
+cask install minikube
 
 # Remove outdated versions from the cellar
 cleanup
