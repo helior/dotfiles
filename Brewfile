@@ -16,6 +16,7 @@ install zsh
 install git
 install hub
 install gpg
+install git-extras
 
 # Web Development
 tap josegonzalez/homebrew-php
