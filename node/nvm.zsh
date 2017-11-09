@@ -23,5 +23,8 @@ load-nvmrc() {
     nvm use default
   fi
 }
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+
+if [ -x "$(command -v nvm)"]; then
+  add-zsh-hook chpwd load-nvmrc
+  load-nvmrc
+fi
