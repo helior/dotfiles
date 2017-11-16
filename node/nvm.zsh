@@ -24,7 +24,7 @@ load-nvmrc() {
   fi
 }
 
-if [ -x "$(command -v nvm)"]; then
+if [ -x "$(command -v nvm)" ]; then
   add-zsh-hook chpwd load-nvmrc
   load-nvmrc
 fi
