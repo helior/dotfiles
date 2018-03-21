@@ -34,6 +34,9 @@ rake install
 - gulp-cli
 - grunt-cli
 
+## TODOs
+* Similar to aliases and .zsh files, each topic can specify which external dependencies they want to pull in. At install, these requirements will be gathered to generate a Brewfile, Gemfile, package.json, et al. and install system-wide executables.
+
 
 Thanks to...
 --------

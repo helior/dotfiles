@@ -27,6 +27,9 @@ install rbenv
 install ruby-build
 install yarn
 
+# iOS Development
+install swiftlint
+
 # Devops Tooling
 tap homebrew/binary
 # install packer
@@ -65,6 +68,7 @@ cask install quicklook-json
 cask install vagrant
 # cask install virtualbox
 cask install minikube
+cask install cakebrew
 
 # Remove outdated versions from the cellar
 cleanup
