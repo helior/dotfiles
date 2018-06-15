@@ -34,10 +34,22 @@ rake install
 - gulp-cli
 - grunt-cli
 
-## TODOs
+#### TODOs
 * Similar to aliases and .zsh files, each topic can specify which external dependencies they want to pull in. At install, these requirements will be gathered to generate a Brewfile, Gemfile, package.json, et al. and install system-wide executables.
 
+## What am I doing?
+* define a library of helper functions for the shell (node)
+* helper operations to check that dependencies are installed
+* define aliases
+* symbolically link actual dotfiles (configuration files)
+* define package/app dependencies
+* customize prompts
+* set OS-level settings
+* push/pop to $PATH variable
+* define topical ENV variables
+* manage completion scripts
 
-Thanks to...
+
+### Thanks to...
 --------
 [Zach Holman](https://github.com/holman/dotfiles) and [Yan Pritzker](https://github.com/skwp/dotfiles) for sharing their methods for installing and updating their dotfiles and git submodules.

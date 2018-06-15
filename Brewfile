@@ -6,11 +6,15 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
+# Install core utilities
+install coreutils
+
 # Install more recent versions of some OS X tools
 tap homebrew/dupes
 install vim --override-system-vi
 install homebrew/dupes/grep
 install zsh
+cask install watchman # Facebook file observing lib
 
 # Version Control
 install git
@@ -30,8 +34,11 @@ install yarn
 # iOS Development
 install swiftlint
 
+# Android Development
+install android-sdk
+
 # Devops Tooling
-tap homebrew/binary
+# tap homebrew/binary
 # install packer
 
 # Applications
