@@ -11,6 +11,7 @@ install coreutils
 
 # Install more recent versions of some OS X tools
 tap homebrew/dupes
+tap caskroom/versions
 install vim --override-system-vi
 install homebrew/dupes/grep
 install zsh
@@ -36,6 +37,7 @@ install swiftlint
 
 # Android Development
 install android-sdk
+cask install java8  # required for React-native
 
 # Devops Tooling
 # tap homebrew/binary
