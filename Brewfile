@@ -6,7 +6,7 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
-# Install core utilities
+# Replaces Mac OS utilities with GNU
 install coreutils
 
 # Install more recent versions of some OS X tools
@@ -15,7 +15,6 @@ tap caskroom/versions
 install vim --override-system-vi
 install homebrew/dupes/grep
 install zsh
-cask install watchman # Facebook file observing lib
 
 # Version Control
 install git
@@ -23,13 +22,17 @@ install hub
 install gpg
 install git-extras
 
-# Web Development
+# PHP Development
 tap josegonzalez/homebrew-php
 install php55
 install composer
 install drush
+
+# Ruby Development
 install rbenv
 install ruby-build
+
+# NodeJS Development
 install yarn
 
 # iOS Development
@@ -40,8 +43,8 @@ install android-sdk
 cask install java8  # required for React-native
 
 # Devops Tooling
-# tap homebrew/binary
-# install packer
+tap homebrew/binary
+install packer
 
 # Applications
 install mackup
