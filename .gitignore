@@ -1,3 +1,5 @@
+local/localrc.symlink
+
 drupal/drush.symlink/*
 !drupal/drush.symlink/drushrc.php
 
