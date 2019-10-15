@@ -24,8 +24,8 @@ rake install
 - **~/.localrc** is sourced automatically. Use this file for sensitive information that you DON'T want in the repository. See *zsh/zshrc.symlink*.
 
 ### Additionally...
-- There is a `Brewfile` in which you'll need to install using `brew bundle`. Many Cask entries are commented out because installing this way was awkward, but I just want to remind myself which apps I usually install.
-- Run `curl -Lo- https://bit.ly/janus-bootstrap | bash` to install Janus (Vim upgrades)
+- There is a `Brewfile` in which you'll need to brew using `brew bundle`. Many Cask entries are commented out because installing this way was awkward, but I just want to remind myself which apps I usually install.
+- Run `curl -Lo- https://bit.ly/janus-bootstrap | bash` to brew Janus (Vim upgrades)
 
 ### Other things I usually download:
 ###### NPM
@@ -35,7 +35,7 @@ rake install
 - grunt-cli
 
 #### TODOs
-* Similar to aliases and .zsh files, each topic can specify which external dependencies they want to pull in. At install, these requirements will be gathered to generate a Brewfile, Gemfile, package.json, et al. and install system-wide executables.
+* Similar to aliases and .zsh files, each topic can specify which external dependencies they want to pull in. At install, these requirements will be gathered to generate a Brewfile, Gemfile, package.json, et al. and brew system-wide executables.
 
 ## What am I doing?
 * define a library of helper functions for the shell (node)

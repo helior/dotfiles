@@ -2,7 +2,7 @@
 export ZSH=$HOME/.dotfiles
 
 # The following lines were added by compinstall
-zstyle :compinstall filename $HOME/.zshrc
+zstyle :compbrew filename $HOME/.zshrc
 
 autoload -Uz compinit
 compinit
