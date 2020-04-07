@@ -1,0 +1,8 @@
+alias rrr="reload!"
+alias rrrr="reload!"
+alias rrrrr="reload!"
+alias rrrrrr="reload!"
+alias rrrrrrr="reload!"
+alias rrrrrrrr="reload!"
+alias rrrrrrrrr="reload!"
+alias rrrrrrrrrr="reload!"
