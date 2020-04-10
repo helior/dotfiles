@@ -11,7 +11,9 @@ HELPDIR=/usr/local/share/zsh/helpfiles
 # Prompt
 local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☠%{$reset_color%})"
 
-PROMPT='%~
+PROMPT='
+••••••••
+→ %~/
 ${smiley} %{$reset_color%}'
 
 # Show completion on first TAB
