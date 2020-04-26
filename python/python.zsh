@@ -15,7 +15,9 @@ export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
 
 ## This is my Pro solution to switch Python  versions.
-# alias python="python3"
+
+## Freudian slip, maybe?
+alias pythong="python"
 
 # ————————————————————— I don't remember when I tried Pyenv, but keeping here for reference
 
