@@ -133,6 +133,9 @@
 [status]
   submodule = 1
 
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+
 [user]
 	name = Helior Colorado
 	email = me@helior.info
