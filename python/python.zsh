@@ -1,4 +1,4 @@
-# Install Steps + tools:
+# Install Steps + tools (Apr 16, 2020):
 # > brew install python
 # > curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 # > python get-pip.py
@@ -6,6 +6,12 @@
 # > pip list -v
 # > pip install virtualenv
 # > virtualenv ${environment_name}
+
+# Install Steps + tools (Apr 26, 2020):
+# brew install python
+# pip3 install --user virtualenv
+# virtualenv --version
+# virtualenv ${environment_name}
 
 
 ### Add Go binaries to PATH
