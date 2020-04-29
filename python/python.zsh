@@ -1,17 +1,9 @@
-# Install Steps + tools (Apr 16, 2020):
-# > brew install python
-# > curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-# > python get-pip.py
-# > pip --version
-# > pip list -v
-# > pip install virtualenv
-# > virtualenv ${environment_name}
-
-# Install Steps + tools (Apr 26, 2020):
+# -----Install Steps + tools (Apr 26, 2020)-----
 # brew install python
 # pip3 install --user virtualenv
 # virtualenv --version
-# virtualenv ${environment_name}
+# virtualenv venv ## being practical
+
 
 
 ### Add Go binaries to PATH
@@ -25,7 +17,20 @@ export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
 ## Freudian slip, maybe?
 alias pythong="python"
 
-# ————————————————————— I don't remember when I tried Pyenv, but keeping here for reference
+alias pipf="pip freeze > requirements.txt"
+alias pa="source venv/bin/activate && echo '🐍 Python Virtualenv Activated!!'"
+alias pd="deactivate && echo '🐍 Python Deactivated ❌'"
+pm() {
+  python manage.py $@
+}
+
+
+
+
+# -----Pyenv-----
+# I don't remember when I tried Pyenv, but keeping here for reference
+# Pyenv is for switching between versions of python. Hopefully you don't need
+# that.
 
 # If you're going to install Python, use pyenv to manage multiple Python/pip
 # versions. Additionally, install virtualenv to isolate packages into their
