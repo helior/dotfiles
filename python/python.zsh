@@ -17,9 +17,31 @@ export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
 ## Freudian slip, maybe?
 alias pythong="python"
 
-alias pipf="pip freeze > requirements.txt"
+## Show a quick diff when re-generating the requirements.txt
+## FIXME: this doesn't rm the file at the end. Why not?
+alias pipf="cp requirements.txt requirements.old.txt && pip freeze > requirements.txt && diff --unified=5 requirements.old.txt requirements.txt && rm requirements.old.txt"
+
+--normal
+Output a normal diff.
+
+-n  --rcs
+Output an RCS format diff.
+
+--side-by-side
+
+-c  -C NUM  --context[=NUM]
+Output NUM (default 3) lines of copied context.
+
+-u  -U NUM  --unified[=NUM]
+Output NUM (default 3) lines of unified context.
+
+
+
+
 alias pa="source venv/bin/activate && echo '🐍 Python Virtualenv Activated!!'"
 alias pd="deactivate && echo '🐍 Python Deactivated ❌'"
+
+## My little Django app helper
 pm() {
   python manage.py $@
 }
