@@ -1,7 +1,7 @@
 require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
-task :brew do
+task :install do
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -34,7 +34,7 @@ task :brew do
   end
 end
 
-task :unbrew do
+task :uninstall do
   Dir.glob('**/*.symlink').each do |linkable|
     file = linkable.split('/').last.split('.symlink').last
     target = "#{ENV["HOME"]}/.#{file}"
