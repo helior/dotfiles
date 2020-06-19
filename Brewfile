@@ -11,7 +11,7 @@ brew "coreutils"
 
 ## brew more recent versions of some OS X tools
 # tap homebrew/dupes
-tap "caskroom/versions"
+tap "homebrew/cask-versions"
 brew "vim"
 brew "homebrew/dupes/grep"
 brew "zsh"
@@ -65,8 +65,8 @@ brew "youtube-dl"
 # cask  ksdiff
 # cask  lastfm
 # cask  nvalt
-## cask  omnifocus
-## cask  phpstorm
+# cask  omnifocus
+# cask  phpstorm
 cask  "qlcolorcode"
 cask  "qlmarkdown"
 cask  "qlprettypatch"
@@ -79,5 +79,5 @@ cask  "quicklook-json"
 # cask  transmission
 # cask  vagrant
 # cask  virtualbox
-#cask  minikube
-#cask  cakebrew
+# cask  minikube
+# cask  cakebrew

@@ -12,13 +12,19 @@ git clone git@github.com:helior/dotfiles.git ~/.dotfiles
 
 ##### Run the **Rakefile**
 
-```
+```sh
 rake install
 ```
 *The installer will set up your symbolic links to your home directory. If a duplicate file exists, it will prompt you to backup the file.*
 
+##### Install packages via Homebrew
+```sh
+brew bundle
+```
+
 ### Things to know:
 - This project assumes you place the repository in **~/.dotfiles**.
+- This project assumes your default shell is ZSH.
 - **\*.symlink** files are automatically symbolically linked to your home directory. See *Rakefile*.
 - **\*.zsh** files are automatically sourced. See *zsh/zshrc.symlink*.
 - **~/.localrc** is sourced automatically. Use this file for sensitive information that you DON'T want in the repository. See *zsh/zshrc.symlink*.
