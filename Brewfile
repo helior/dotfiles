@@ -32,6 +32,9 @@ brew "git-extras"
 #brew rbenv
 #brew ruby-build
 
+## Python Development
+brew python
+
 ## NodeJS Development
 brew "yarn"
 
