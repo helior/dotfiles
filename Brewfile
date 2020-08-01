@@ -16,6 +16,9 @@ brew "vim"
 brew "homebrew/dupes/grep"
 brew "zsh"
 
+## General Development
+brew jq
+
 ## Version Control
 brew "git"
 brew "hub"
