@@ -11,9 +11,10 @@
 # export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 # export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 # export PATH="$HOME/Library/Python/3.6/bin:$PATH"
+export PATH="$HOME/Library/Python/3.8/bin:$PATH"
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 # export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
 # export PATH="/usr/local/lib/python3.8/site-packages:$PATH"
-
 
 
 # -----Install Steps + tools (Apr 26, 2020)-----
