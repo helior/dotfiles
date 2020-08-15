@@ -5,3 +5,6 @@
 # brew services start mysql
 # brew services list
 # brew services restart mysql
+
+## Mysql backup
+#mysqldump --user root --password=root olycms > backups/2020-08-09.sql
