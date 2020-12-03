@@ -1,20 +1,19 @@
-# Sanity-Check
-# /usr/bin/python
-# This is default Mac OS X System 👌🏼
+# ✅ Do a sanity-check
+# `which python`
 
-# /usr/local/bin/python3
-# Most likely you installed this with Homebrew, particularly if
-# `ls -la /usr/local/bin/py*` symlinks to Celler paths.
+# IF /usr/bin/python → This is default Mac OS X System 👌🏼
 
+# IF /usr/local/bin/python3 → Most likely you installed this with Homebrew, 
+# particularly if `ls -la /usr/local/bin/py*` symlinks to Celler paths.
+
+# Next steps: get Pip, and figure out what is the recommended PATH if I have python3 from Homebrew
 
 ### Add Python binaries to PATH
 # export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 # export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 # export PATH="$HOME/Library/Python/3.6/bin:$PATH"
-export PATH="$HOME/Library/Python/3.8/bin:$PATH"
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
-# export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
-# export PATH="/usr/local/lib/python3.8/site-packages:$PATH"
+export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
+export PATH="/usr/local/lib/python3.8/site-packages:$PATH"
 
 
 # -----Install Steps + tools (Apr 26, 2020)-----
