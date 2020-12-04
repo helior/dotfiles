@@ -19,3 +19,17 @@ alias ddddddd="deload!"
 alias dddddddd="deload!"
 alias ddddddddd="deload!"
 alias dddddddddd="deload!"
+
+
+alias code!='cd ~/Code/Oly.ai/cms/ && code .'
+
+alias ccc="code!"
+alias cccc="code!"
+alias ccccc="code!"
+alias cccccc="code!"
+alias ccccccc="code!"
+alias cccccccc="code!"
+alias ccccccccc="code!"
+alias cccccccccc="code!"
+
+
