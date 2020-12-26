@@ -14,6 +14,7 @@
 # export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
 export PATH="/usr/local/lib/python3.8/site-packages:$PATH"
+export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
 
 
 # -----Install Steps + tools (Apr 26, 2020)-----
@@ -35,7 +36,7 @@ alias pipf="cp requirements.txt requirements.old.txt && pip3 freeze > requiremen
 
 alias pa="source venv/bin/activate && echo '🐍 Python Virtualenv Activated!!'"
 alias pd="deactivate && echo '🐍 Python Deactivated ❌'"
-alias pi="pip install -r requirements.txt"
+alias pi="python -m pip install -r requirements.txt"
 
 ## My little Django app helper
 pm() {
