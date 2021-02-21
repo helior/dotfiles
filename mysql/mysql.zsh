@@ -7,4 +7,4 @@
 # brew services restart mysql
 
 ## Mysql backup
-#mysqldump --user root --password=root olycms > backups/2020-08-09.sql
+# mysqldump --user root --password=root oly > backups/$(date '+%F_%H%M%S').sql

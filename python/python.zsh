@@ -3,6 +3,7 @@
 
 # IF /usr/bin/python → This is default Mac OS X System 👌🏼
 
+# `which python3`
 # IF /usr/local/bin/python3 → Most likely you installed this with Homebrew, 
 # particularly if `ls -la /usr/local/bin/py*` symlinks to Celler paths.
 
@@ -14,7 +15,7 @@
 # export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
 export PATH="/usr/local/lib/python3.8/site-packages:$PATH"
-export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
+# export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
 
 
 # -----Install Steps + tools (Apr 26, 2020)-----
@@ -26,7 +27,7 @@ export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
 
 ## Freudian slip, maybe?
 alias pythong="python"
-
+alias python="python3"
 ## Show a quick diff when re-generating the requirements.txt
 ## FIXME: this doesn't rm the file at the end because diff exits with 1 (as
 ## expected, Diff(1) returns 1 when differences are found)
