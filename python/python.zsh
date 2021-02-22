@@ -24,8 +24,7 @@
 # export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 # export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
-export PATH="/usr/local/lib/python3.7/site-packages:$PATH"
-export PATH="/usr/local/lib/python3.8/site-packages:$PATH"
+export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 # export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
 
 
