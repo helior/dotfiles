@@ -34,7 +34,7 @@
   pr-origin = !git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*' && git fetch origin
   # Create an on-the-fly snapshot
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
-  st = !clear && git status
+  st = !clear && git status -sb
 
   # Add a remote; $1: remote name; $2: github path
   ra = "!f() { git remote add $1 https://github.com/$2.git; }; f"

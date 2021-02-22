@@ -8,7 +8,7 @@ alias rrrrrrrr="reload!"
 alias rrrrrrrrr="reload!"
 alias rrrrrrrrrr="reload!"
 
-alias deload!='cd ~/.dotfiles && code .'
+alias deload!='cd ~/.dotfiles && code . && git status'
 alias ddd="deload!"
 alias dddd="deload!"
 alias ddddd="deload!"
@@ -28,4 +28,3 @@ alias ccccccc="code!"
 alias cccccccc="code!"
 alias ccccccccc="code!"
 alias cccccccccc="code!"
-
