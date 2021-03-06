@@ -8,7 +8,9 @@ alias rrrrrrrr="reload!"
 alias rrrrrrrrr="reload!"
 alias rrrrrrrrrr="reload!"
 
+# TODO Helior from the future: what the fuck is a deload?
 alias deload!='cd ~/.dotfiles && code . && git status'
+
 alias ddd="deload!"
 alias dddd="deload!"
 alias ddddd="deload!"
