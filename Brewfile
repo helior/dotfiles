@@ -17,7 +17,9 @@ brew "homebrew/dupes/grep"
 brew "zsh"
 
 ## General Development
-brew jq
+brew jq     # json parser
+brew bat    # alternative to `cat` with syntax-highlighting
+brew fzf    # General-purpose CLI fuzzy-finder
 
 ## Version Control
 brew "git"
