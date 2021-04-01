@@ -12,3 +12,9 @@ if hash vim 2>/dev/null; then
 elif hash vi 2>/dev/null; then
   export GIT_EDITOR="vi"
 fi
+
+
+fd() {
+  preview="git diff $@ --color=always -- {-1}"
+  git diff $@ --name-only | fzf -m --ansi --preview $preview
+}
