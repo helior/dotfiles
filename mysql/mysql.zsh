@@ -8,3 +8,4 @@
 
 ## Mysql backup
 # mysqldump --user root --password=root oly > backups/$(date '+%F_%H%M%S').sql
+# mysqldump --user root oly > backups/$(date '+%F_%H%M%S').sql
