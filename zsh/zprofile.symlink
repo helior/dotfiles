@@ -1,1 +1,2 @@
-eval $(/opt/homebrew/bin/brew shellenv)
+BREW_BIN=$(which brew)
+eval $($BREW_BIN shellenv)

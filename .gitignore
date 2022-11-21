@@ -1,3 +1,4 @@
+local
 local/localrc.symlink
 
 drupal/drush.symlink/*

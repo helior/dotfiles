@@ -1,3 +1,6 @@
+
+# Sep 7, 2021 TODO: alias `pa` also runs `virtualenv venv` when the `venv` directory is not found
+
 ## Install Python
 ## NOTE: Use v3.8 at minimum; 3.7 for instance is not supported on Apple M1.
 
