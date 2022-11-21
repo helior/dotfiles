@@ -53,27 +53,10 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 
-
-
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 # --------------
 
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/heliorc/Desktop/fetchers/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/heliorc/Desktop/fetchers/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/heliorc/Desktop/fetchers/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/heliorc/Desktop/fetchers/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/heliorc/Desktop/fetchers/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/heliorc/Desktop/fetchers/node_modules/tabtab/.completions/slss.zsh
-export PATH=$PATH:/Users/heliorc/.go/bin
-
-export GOPATH=/Users/heliorc/go
-
-export PATH=$PATH:/Users/heliorc/go/bin
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

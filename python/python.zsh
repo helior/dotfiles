@@ -13,10 +13,6 @@
 # Next steps: get Pip, and figure out what is the recommended PATH if I have python3 from Homebrew
 # —————————————————————
 # Troubleshooting
-#
-#
-#
-#
 
 
 ### Add Python binaries to PATH
@@ -29,20 +25,20 @@ export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 
 
 # -----Install Steps + tools (Apr 26, 2020)-----
-# ⬛️ brew install python
+# ⬛️ brew install python@3.8
+# Install latest pip within your venv
+# ⬛️ python -m pip install --upgrade pip --user
 # ⬛️ pip3 install --user virtualenv
 # ⬛️ virtualenv --version
 # ⬛️ virtualenv venv ## being practical
 
-# Install latest pip within your venv
-# ⬛️ python -m pip install --upgrade pip --user
 
 
 ## Force Python3. Use `command python` to access original binary
 alias python=python3
 ## Freudian slip, maybe?
 alias pythong="python"
-alias python="python3"
+
 ## Show a quick diff when re-generating the requirements.txt
 ## FIXME: this doesn't rm the file at the end because diff exits with 1 (as
 ## expected, Diff(1) returns 1 when differences are found)
@@ -77,3 +73,8 @@ pm() {
 
 # When you forget your password, run this command to reset it.
 # `python manage.py changepassword <user_name>`
+
+
+# Installing brew openssl (@1.1.1); brew link openssl --force told me to do it, and I was trying to fix installing cryptography for python@3.8.2
+# export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
