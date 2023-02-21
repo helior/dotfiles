@@ -1,0 +1,8 @@
+# YT-DLP (Replaces YouTube-DL)
+# See https://github.com/yt-dlp/yt-dlp#configuration
+
+# Save all videos under YouTube directory in your home directory.
+--output=~/YouTube/%(title)s.%(ext)s
+
+# Save both Video and Audio as mp4 and m4a, respectively.
+--format=mp4,m4a

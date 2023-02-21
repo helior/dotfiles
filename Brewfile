@@ -41,7 +41,7 @@ brew "git-extras"
 brew python
 
 ## NodeJS Development
-brew "yarn"
+# brew "yarn"
 
 ## iOS Development
 # brew swiftlint
@@ -59,7 +59,8 @@ brew "mackup"
 tap "caskroom/cask"
 
 # Fun stuff
-brew "youtube-dl"
+# brew "youtube-dl" # dying library
+brew "yt-dlp" # replaces youtube-dl
 
 # cask  alfred
 # cask  all2mp3
