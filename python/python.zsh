@@ -37,7 +37,11 @@ export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 alias python=python3
 ## Freudian slip, maybe?
 alias pythong="python"
+
+## Set the global python version, via alias
+# alias python3=python3.8
 alias python3=python3.11
+
 ## Show a quick diff when re-generating the requirements.txt
 ## FIXME: this doesn't rm the file at the end because diff exits with 1 (as
 ## expected, Diff(1) returns 1 when differences are found)
