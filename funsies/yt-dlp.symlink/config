@@ -4,5 +4,6 @@
 # Save all videos under YouTube directory in your home directory.
 --output=~/YouTube/%(title)s.%(ext)s
 
-# Save both Video and Audio as mp4 and m4a, respectively.
+# Save both Video and Audio as mp4 and m4a.
+# Note: I moved this to aliases `yt`, `ytv`, and `yta`, respectively.
 --format=mp4,m4a
