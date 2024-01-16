@@ -23,6 +23,7 @@
 # export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="$HOME/Library/Python/3.11/bin:$PATH"
+export PATH="$HOME/Library/Python/3.12/bin:$PATH"
 
 # -----Install Steps + tools (Apr 26, 2020)-----
 # ⬛️ brew install python@3.8
@@ -40,7 +41,9 @@ alias pythong="python"
 
 ## Set the global python version, via alias
 # alias python3=python3.8
-alias python3=python3.11
+alias python3=python3.12
+
+alias pip='python -m pip'
 
 ## Show a quick diff when re-generating the requirements.txt
 ## FIXME: this doesn't rm the file at the end because diff exits with 1 (as
