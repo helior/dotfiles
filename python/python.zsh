@@ -50,6 +50,7 @@ alias pip='python -m pip'
 ## expected, Diff(1) returns 1 when differences are found)
 ## TODO: recursively travel up the folder tree until you find `requirements.txt`
 alias pipf="cp requirements.txt requirements.old.txt && pip3 freeze > requirements.txt && diff --unified=5 requirements.old.txt requirements.txt; rm requirements.old.txt"
+alias venv="python -m venv venv"
 alias pa="source venv/bin/activate && echo '🐍 Python Virtualenv Activated!!'"
 alias pd="deactivate && echo '🐍 Python Deactivated ❌'"
 alias pi="python -m pip install -r requirements.txt"
