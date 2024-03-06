@@ -1,3 +1,5 @@
+export PATH=$PATH:/usr/local/bin
+
 if [[ $(command -V gdate) ]]; then
   alias date='gdate'
 fi

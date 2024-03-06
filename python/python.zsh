@@ -23,6 +23,7 @@
 # export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="$HOME/Library/Python/3.11/bin:$PATH"
+export PATH="$HOME/Library/Python/3.12/bin:$PATH"
 
 # -----Install Steps + tools (Apr 26, 2020)-----
 # ⬛️ brew install python@3.8
@@ -40,13 +41,16 @@ alias pythong="python"
 
 ## Set the global python version, via alias
 # alias python3=python3.8
-alias python3=python3.11
+alias python3=python3.12
+
+alias pip='python -m pip'
 
 ## Show a quick diff when re-generating the requirements.txt
 ## FIXME: this doesn't rm the file at the end because diff exits with 1 (as
 ## expected, Diff(1) returns 1 when differences are found)
 ## TODO: recursively travel up the folder tree until you find `requirements.txt`
 alias pipf="cp requirements.txt requirements.old.txt && pip3 freeze > requirements.txt && diff --unified=5 requirements.old.txt requirements.txt; rm requirements.old.txt"
+alias venv="python -m venv venv"
 alias pa="source venv/bin/activate && echo '🐍 Python Virtualenv Activated!!'"
 alias pd="deactivate && echo '🐍 Python Deactivated ❌'"
 alias pi="python -m pip install -r requirements.txt"
