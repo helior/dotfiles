@@ -1,1 +1,1 @@
-alias serve="open http://0.0.0.0:8000 && python3 -m http.server"
+alias serve="open http://localhost:8000 && python3 -m http.server"
