@@ -1,3 +1,6 @@
+
+# Mar 6, 2024 - Brew was not found, so I'm setting the PATH here.
+export PATH="/opt/homebrew/bin:$PATH"
 # Set PATH, MANPATH, etc., for Homebrew.
 BREW_BIN=$(which brew)
 eval $($BREW_BIN shellenv)
