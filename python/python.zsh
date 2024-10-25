@@ -53,7 +53,7 @@ alias pipf="cp requirements.txt requirements.old.txt && pip3 freeze > requiremen
 alias venv="python -m venv venv"
 alias pa="source venv/bin/activate && echo '🐍 Python Virtualenv Activated!!'"
 alias pd="deactivate && echo '🐍 Python Deactivated ❌'"
-alias pi="python -m pip install -r requirements.txt"
+alias pi="python -m pip install -r requirements.txt --break-system-packages"
 
 ## My little Django app helper
 pm() {
