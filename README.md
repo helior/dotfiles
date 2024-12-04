@@ -3,11 +3,15 @@ Helior's dotfiles
 
 
 ### How to install:
+**Prerequisites:**
+1. Add device's SSH key to Github generate them (generate them [like this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+2. Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 ##### Clone this project to **~/.dotfiles**
 
 ```
 git clone git@github.com:helior/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 ```
 
 ##### Run the **Rakefile**
@@ -17,7 +21,7 @@ rake install
 ```
 *The installer will set up your symbolic links to your home directory. If a duplicate file exists, it will prompt you to backup the file.*
 
-##### Install packages via Homebrew
+##### Install other packages via Homebrew (Not recommended - this gets out of date frequently)
 ```sh
 brew bundle
 ```
